@@ -1,0 +1,255 @@
+[
+  {
+    "type": "alpha_numeric",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "end_of_line",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "escaped_special_char",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "negation",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "range",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "alpha_numeric",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "set",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "alpha_numeric",
+          "named": true
+        },
+        {
+          "type": "negation",
+          "named": true
+        },
+        {
+          "type": "range",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_pattern",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "end_of_line",
+          "named": true
+        },
+        {
+          "type": "escaped_special_char",
+          "named": true
+        },
+        {
+          "type": "meta_character",
+          "named": true
+        },
+        {
+          "type": "quantifier",
+          "named": true
+        },
+        {
+          "type": "set",
+          "named": true
+        },
+        {
+          "type": "special_sequence",
+          "named": true
+        },
+        {
+          "type": "start_of_line",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "special_sequence",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "alphanumeric_char",
+          "named": true
+        },
+        {
+          "type": "control_char",
+          "named": true
+        },
+        {
+          "type": "digit",
+          "named": true
+        },
+        {
+          "type": "hex_digit",
+          "named": true
+        },
+        {
+          "type": "letter",
+          "named": true
+        },
+        {
+          "type": "lowercase_letter",
+          "named": true
+        },
+        {
+          "type": "printable_char",
+          "named": true
+        },
+        {
+          "type": "punctuation_char",
+          "named": true
+        },
+        {
+          "type": "uppercase_letter",
+          "named": true
+        },
+        {
+          "type": "whitespace_char",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "start_of_line",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "\"",
+    "named": false
+  },
+  {
+    "type": "$",
+    "named": false
+  },
+  {
+    "type": "%",
+    "named": false
+  },
+  {
+    "type": "'",
+    "named": false
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": "-",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "\\",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "^",
+    "named": false
+  },
+  {
+    "type": "alphanumeric_char",
+    "named": true
+  },
+  {
+    "type": "control_char",
+    "named": true
+  },
+  {
+    "type": "digit",
+    "named": true
+  },
+  {
+    "type": "hex_digit",
+    "named": true
+  },
+  {
+    "type": "letter",
+    "named": true
+  },
+  {
+    "type": "lowercase_letter",
+    "named": true
+  },
+  {
+    "type": "meta_character",
+    "named": true
+  },
+  {
+    "type": "printable_char",
+    "named": true
+  },
+  {
+    "type": "punctuation_char",
+    "named": true
+  },
+  {
+    "type": "quantifier",
+    "named": true
+  },
+  {
+    "type": "string_literal",
+    "named": true
+  },
+  {
+    "type": "uppercase_letter",
+    "named": true
+  },
+  {
+    "type": "whitespace_char",
+    "named": true
+  }
+]
